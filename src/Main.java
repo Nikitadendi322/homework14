@@ -25,6 +25,7 @@ public class Main {
 
         System.out.println(michaelBulgakov);
         System.out.println(levTolsoy);
+        System.out.println();
     }
 
 }
