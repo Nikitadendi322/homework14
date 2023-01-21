@@ -3,8 +3,8 @@ public class Author {
     private final String name;
     private final String surname;
 
-    private Author(String name, String surname) {
-        this name = name;
+    Author(String name, String surname) {
+        this.name = name;
         this.surname = surname;
     }
 
@@ -22,12 +22,12 @@ public class Author {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Author author = (Author) o;
-        return Object.equals(name, author.name) && Object.equals(surname, author.surname);
+        return name.equals(author.name) && surname.equals(author.surname);
     }
 
     @Override
     public int hashCode() {
-        return Object.hash(name, surname);
+        return Objects.hash(name, surname);
     }
 
     @Override
@@ -37,4 +37,4 @@ public class Author {
                 ", surname='" + surname + '\'' +
                 '}';
     }
-} so
+}
