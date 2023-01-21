@@ -1,4 +1,4 @@
-
+import java.util.Objects;
 public class Author {
     private final String name;
     private final String surname;
